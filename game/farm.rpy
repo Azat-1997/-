@@ -17,16 +17,23 @@ label farm:
         show bg farm with dissolve
         show honeycrisp nchappy with dissolve
         play music farm
-        honeycrisp "Hey stud! It's great to see you again."
-        mc "Hey Honey, I'm always happy to visit."
+        honeycrisp "Хей жеребец! Круто видеть тебя снова."
+        #
+        mc "Хей Дорогая, Я всегда рад проведать."
+        #
         show honeycrisp nclaughing with dissolve
-        honeycrisp "I have great news too, mah wrist is finally okay! And, I have a new cow employee."
-        mc "That's wonderful, you'll barely need my help anymore I guess."
+        honeycrisp "У меня хорошие новости, мое запястье наконец-то впорядке! И, у меня новая дойная корова"
+        #
+        mc "Это великолепно, Тебе едва ли нужна ещё моя помощь я полагаю."
+        #
         show honeycrisp nchappy with dissolve
-        honeycrisp "Well stud, I could always use an extra set of hands around the farm."
-        honeycrisp "With three able bodied workers, this place is gonna glow!"
+        honeycrisp "Итак жеребец, Я всегда могу использовать дополнительный набор рук на ферме."
+        #
+        honeycrisp "С тремя работоспособными работниками это место будет сиять!"
+        #
         show honeycrisp nchorny with dissolve
-        honeycrisp "And of course, y'all welcome to join me in bed, ehehe..."
+        honeycrisp "И конечно, ты всегда можешь присоединиться ко мне в постели, ехехе..."
+        # И конечно, всегда добро пожаловать в мою постель, ехехе...
         $ blossomvisit = 0
         jump farmmenu
     else:
@@ -40,129 +47,135 @@ label farm:
                 pass
             show honeycrisp nchappy with dissolve
             if blossomvisit == 1:
-                honeycrisp "Howdy again, I hope you and Blossom are behaving up there."
+                honeycrisp "Привет еще раз, надеюсь, вы с Блоссом хорошо себя чувствуете."
                 if confessedsexwithblossom == 1:
-                    honeycrisp "I'd tell y'all to use protection, but I guess I don't need to worry about that."
-                honeycrisp "Ready to get some work done? Or are you heading out?"
+                    honeycrisp "Я бы посоветовала вам использовать защиту, но, думаю, мне не нужно об этом беспокоиться."
+                honeycrisp "Готов поработать? Или тебе пора?"
             else:
-                honeycrisp "Howdy stud, here for work?"
+                honeycrisp "Здаров жеребец, нужна работенка?"
             jump farmmenu
     label farmmenu:
         menu:
-            "Work with Honeycrisp":
+            "Работа с Ханикрисп":
                 scene bg farm2 with dissolve
                 $ monies += 25
-                "I work all day and earn 25 monies."
+                "Я работаю целый день и зарабатываю 25 монет."
                 show bg farmkitchen with dissolve
                 show honeycrisp closehappy with dissolve
-                "As the afternoon lulls on, I spend my time with Honey which eventually leads us into the kitchen."
+                "Когда наступает полдень, я провожу время с Хани, которая в конечном итоге приводит нас на кухню."
                 play ambience ambiencenight
                 stop music fadeout 3.0
                 menu honeycrispmenu:
-                    "Talk" if honeycrisptalks == 0:
-                        "I decide to strike up a conversation with Honeycrisp, I'm sure she's full of interesting stories."
+                    "Говорить" if honeycrisptalks == 0:
+                        "Я решаю завязать разговор с Ханикрисп, уверен, что она полна интересных историй."
                         jump honeycrisptalk
-                    "Sex" if honeycrispsex == 0:
+                    "Секс" if honeycrispsex == 0:
                         menu:
-                            "Threesome" if fr == 1:
+                            "Тройничок" if fr == 1:
                                 $ honeycrispsex = 1
                                 show honeycrisp closeshocked with dissolve:
                                     xpos 200
                                     ypos 720
-                                honeycrisp "Wha wha?!?!"
-                                "Blossom who overheard us while pouring herself a drink also reacts."
+                                honeycrisp "Чт-Чтооо?!?!"
+                                "Блоссом, которая подслушала нас, наливая себе напиток, тоже реагирует."
                                 show blossom closeshocked with dissolve:
                                     xpos 600
                                     ypos 75
-                                blossom "Wha wha?!?!"
-                                mc "Well, we don't need to play games where we take turns doing it behind everyone else's back anymore."
-                                mc "So why not kick back and have some fun?"
+                                blossom "Что-Что?!?!"
+                                mc "Что ж, нам больше не нужно играть в игры, в которых мы по очереди делаем это за спиной всех остальных"
+                                #
+                                mc "Так почему бы не забить и не повеселиться?"
                                 show honeycrisp closeangry with dissolve
-                                honeycrisp "Jeeeeeeeeeeezzzzzzz... Ya got some nerve [playername]..."
+                                honeycrisp "Бооооожжжжеееее...... Ты действуешь на нервы [playername]..."
+                                #
                                 show blossom closeawkward with dissolve
-                                blossom "I'll do it! If that's what you want..."
-                                honeycrisp "Uhhhuhh..."
-                                "Looks like I'll have to convince Honeycrisp, like a boss battle?"
-                                "If I pick the wrong choices, she'll refuse and I'll have to try again another day."
+                                blossom "Я сделаю это! Если это то, чего ты хочешь..."
+                                honeycrisp "Ухххухх..."
+                                "Похоже, мне придется убедить Ханикрисп, будто сражаясь с боссом?"
+                                #
+                                "Если я ошибусь, она откажется и мне придется попытаться в другой день."
+                                #
                                 menu:
-                                    "Come on Honeycrisp, you're not gonna let Blossom have all the fun are you?":
+                                    "Давай же Ханикрисп, ты же не собираешься отдать Блоссом все веселье, не так ли?":
+                                    # ?
                                         show honeycrisp closeneutral with dissolve
-                                        blossom "That's right! You're not embarrassed to play around are you?"
-                                        honeycrisp "Ehh... My lil Blossom is getting tough lately."
-                                    "It's not like it's your first time doing it.":
-                                        honeycrisp "Tch, that's your convincing argument? I did it when I was brainwashed so I'll do it now?"
-                                        honeycrisp "The answer's no."
-                                        blossom "Awhh man..."
+                                        blossom "Именно так! Ты не стесняешься играть всюду, не так ли?"
+                                        honeycrisp "Эхх... Моя маленькая Блоссом стала жесткой в последнее время"
+                                    "Не похоже, что ты делаешь это впервые.":
+                                        honeycrisp "Тцсс, и это твой убедительны аргумент? Я сделала это, когда мне промыли мозги, значит сделаю и сейчас?"
+                                        honeycrisp "Ответ: нет."
+                                        blossom "Оххх мужик..."
                                         hide blossom with dissolve
                                         jump honeycrispmenu
                                 show honeycrisp closeangry with dissolve
-                                honeycrisp "But doing something with my sister? That's inexcusable... I can't..."
+                                honeycrisp "Но занимтаться этим вместе с сестрой? Это непростительно ... Я не могу ..."
                                 menu:
-                                    "Doing something with your sister? You don't have to do anything with her at all.":
+                                    "Делать что-либо с твоей сестрой? Тебе с ней совсем не придется ничего делать.":
                                         show honeycrisp closeneutral with dissolve
-                                        honeycrisp "Mmm... That's true enough..."
-                                        honeycrisp "And you didn't make us do anything with each other when we were brainwashed..."
-                                    "You're sharing me anyway, what's wrong with cutting the middleman?":
-                                        honeycrisp "This isn't some game where you can play around with everyone..."
-                                        honeycrisp "Stop taking my opinions so lightly..."
-                                        blossom "Awhh man..."
+                                        honeycrisp "Ммм... Это достаточно правдиво..."
+                                        honeycrisp "И ты не заставлял нас делать что угодно друг с другом, когда наши мозги были промыты..."
+                                    "Вы все равно делите меня, что плохо в отмене посредника?":
+                                        honeycrisp "Это не та игра, где ты можешь играть всюду с каждым..."
+
+                                        honeycrisp "Перестань так легко относиться к моему мнению ..."
+                                        blossom "Охх мужик..."
                                         hide blossom with dissolve
                                         jump honeycrispmenu
-                                blossom "Yeah, yeah! We're only gonna be next to each other! It's easier for all three of us!"
-                                honeycrisp "Siiighhh, fine!"
+                                blossom "Да, да! Мы будем только рядом друг с другом! Нам троим проще!"
+                                honeycrisp "*Вздох*, ладно!"
                                 jump honeyblossomthreesome
-                            "Cowgirl position":
+                            "Поза наездницы":
                                 $ honeycrispsex = 1
-                                "She grins at my proposition and leads me up to her bedroom."
+                                "Она усмехается моему предложению и ведет меня в свою спальню."
                                 jump honeycrispsex
-                            "Back":
+                            "Назад":
                                 jump honeycrispmenu
-                    "Leave":
-                        "I bid Honeycrisp farewell and return home."
+                    "Уйти":
+                        "Я прощаюсь с Ханикрисп и возвращаюсь домой."
                         jump evening
-            "Talk" if honeycrisptalks == 0:
+            "Говорить" if honeycrisptalks == 0:
                     menu:
-                        "Talk about recent events":
-                            honeycrisp "Ever since you came along things have been going so well lately."
-                            mc "Don't forget the work your sister and Anna did, I was only a small part of that."
-                            honeycrisp "Ay, but sometimes the smallest cog is required to make the machine run."
-                            honeycrisp "I think you were the exact knock back to reality I required."
-                            honeycrisp "Sometimes you're so alone, and you work so hard you forget what the outside world is like."
-                            mc "It's good to reach out and reconnect with friends and family every so often."
-                            mc "You need to remember that you're not alone, and you can get the support you need."
-                            honeycrisp "You're right stud, but you forget that one of the hardest steps sometimes is reaching out and accepting that support."
-                            honeycrisp "For that, the solution is a little more cloudy. I'm just fortunate that you decided to show up when ya did."
-                        "Plans for the future?":
-                            mc "Now you're working closely with Anna and have an employee, what are your plans for the future?"
-                            honeycrisp "Hmm, good question stud."
-                            honeycrisp "Ya see, I was never the planner in the farm, that was always paps. He always had a plan and ambition."
+                        "Расскажите о последних событиях":
+                            honeycrisp "С тех пор, как ты пришел, в последнее время дела идут так хорошо."
+                            mc "Не забывай работу, которую проделали твоя сестра и Анна, я был лишь небольшой частью этого."
+                            honeycrisp "Да, но иногда требуется самый маленький винтик, чтобы машина работала."
+                            honeycrisp "Я думаю, что ты вернул меня к реальности, в которой я нуждалась."
+                            honeycrisp "Иногда ты такой одинокий и так много работаешь, что забываешь, каков внешний мир."
+                            mc "Полезно время от времени воссоединиться с друзьями и семьей и снова общаться с ними."
+                            mc "Вам нужно помнить, что ты не одинока и можешь получить необходимую поддержку."
+                            honeycrisp "Ты прав жеребец, но забывай, что иногда одним из самых сложных шагов является получение и принятие этой поддержки."
+                            honeycrisp "For that, the solution is a little more cloudy. Мне просто повезло, что ты решил появиться тогда, когда пришел."
+                        "Планы на будущее?":
+                            mc "Теперь ты тесно работаешь с Анной и у тебя есть сотрудник, каковы твои планы на будущее?"
+                            honeycrisp "Хмм, хороший вопрос, жеребец."
+                            honeycrisp "Видишь ли, Я никогда не была управленцем на ферме, это всегда был папа. У него всегда были планы и амбции."
                             show honeycrisp ncsad with dissolve
-                            honeycrisp "Which is why it felt so icky for him to pass in his prime, he had so much spirit in him."
-                            honeycrisp "Never got to see the fruit of his work, or even the opportunity to have grandkids."
-                            "See sighs and tears up slightly, it's clear that the memories are still painful."
+                            honeycrisp "Вот почему было так жаль проводить его в последний путь в расцвете сил, в нем было так много духа."
+                            honeycrisp "Ему так и не довелось увидеть плоды своей работы и даже дождаться внуков."
+                            "Вижу вздохи и чуть-чуть слезы, видно, что воспоминания все еще болезненны."
                             mc "I've never actually asked because it felt like a sensitive topic, but how did he pass?"
-                            honeycrisp "He didn't even get to die in an interesting way, it was a disease that caused him to deteriorate so fast."
-                            honeycrisp "Paps was healthy one moment, and in the next week he was immobilised in hospital, and then in a month..."
-                            mc "It's shocking how fast it can happen sometimes."
-                            mc "What about your mother, is she not around?"
-                            honeycrisp "Nah, we're estranged from her. I have no idea where she is, or what she's doing."
-                            honeycrisp "My paps was a single father for years, quite a rare case in Arcadia. After mother left, he didn't care much for dating, Blossom and I were always his priority."
+                            honeycrisp "Он даже не смог умереть интересным образом, это была болезнь, которая заставила его так быстро ухудшиться."
+                            honeycrisp "Папа был здоров в одно мгновение, а на следующей неделе он был госпитализирован, а затем через месяц..."
+                            mc "Просто удивительно, как быстро это иногда происходит."
+                            mc "А как же твоя мать, разве она не рядом?"
+                            honeycrisp "Не-а, мы отдалились от нее. Я понятия не имею, где она и что делает."
+                            honeycrisp "Мой папаша был отцом-одиночкой в течение многих лет, довольно редкий случай в Аркадии. После того, как мама ушла, он не сильно озаботился о личной жизни, мы с Блоссом всегда были его приоритетом."
                             show honeycrisp ncneutral with dissolve
-                            honeycrisp "Gosh, anyway... Sorry to bore you with that tangent, you asked me if I had any plans for the future."
+                            honeycrisp "Черт возьми, в любом случае... Прости, что задеваю тебя этой темой, но ты спросила, есть ли у меня какие-нибудь планы на будущее."
                             show honeycrisp nchappy with dissolve
-                            honeycrisp "Guess I'll have to think about it more now, thanks stud."
-                        "How did you become a farmer?":
-                            mc "How did you become a farmer?"
-                            honeycrisp "It has always been in my blood, stud. Hey, that rhymed!"
-                            honeycrisp "I helped out paps ever since I was a tiny girl."
-                            honeycrisp "Back then he'd give me small 'made up' jobs for fun, like uh, raking the leaves!"
-                            mc "You've never considered any other work?"
-                            honeycrisp "I mean it's a farce ain't it. I'd probably have to sell the farm, and that's been in our family for longer than I know."
-                            honeycrisp "But I don't mind being a farmer for the rest of mah days, it's incredibly satisfying work, and every evening is free time so I never burn out."
-                            mc "You reckon your children will run the farm then?"
-                            honeycrisp "Hah, I don't tend to think that far forward in mah life, I just meander mah way through each day."
-                            honeycrisp "What about you? Are you ever going to settle down with a permanent job?"
-                            mc "That's a great question, it would probably pay more if I specialised into one career."
+                            honeycrisp "Думаю, теперь мне придется больше думать об этом, спасибо, жеребец."
+                        "Как ты стала фермером?":
+                            mc "Как ты стала фермером?"
+                            honeycrisp "Это всегда было в моей крови, жеребец. О как!"
+                            honeycrisp "Я помогала папе с тех пор, как была маленькой девочкой."
+                            honeycrisp  "Тогда он давал мне небольшие \"выдуманные\" задания для развлечения, например, сгребать листья!"
+                            mc "Ты никогда не рассматривала другую работу?"
+                            honeycrisp "Похоже, что это фарс, не так ли? Вероятно, мне придется продать ферму, а она принадлежит нашей семье столько, сколько я себя знаю."
+                            honeycrisp "Но я не против быть фермером до конца своих дней, это невероятно приятная работа, и каждый вечер-это свободное время, так что я никогда не перегораю."
+                            mc "Ты рассчитываешь, что ваши дети будут управлять фермой?"
+                            honeycrisp "Ха, я не склонна думать так далеко вперед в своей жизни, я просто блуждаю по ней каждый день."
+                            honeycrisp "О чем ты? Ты когда-нибудь собираешься устроиться на постоянную работу?"
+                            mc "Это хороший вопрос, вероятно, я бы получал больше, если бы специализировался на одной карьере."
                             show honeycrisp nclaughing with dissolve
                             honeycrisp "Y'all always welcome to make working here your career, although if you do we won't be able to have children to run the place after us, ahaha!"
                             mc "That's very cheeky of you to presume, haha."
@@ -175,17 +188,17 @@ label farm:
                             mc "I should join you sometime."
                             honeycrisp "Absolutely! Three's a crowd!"
                             honeycrisp "I'd give you a specific time and date, but the fun of visiting the nightclub and bar is just seeing who's there!"
-                        "Back":
+                        "Назад":
                             jump farmmenu
                     $ honeycrisptalks = 1
                     jump farmmenu
-            "Sex" if ashoney == 0:
+            "Секс" if ashoney == 0:
                 $ ashoney = 1
-                honeycrisp "Hmm, not right now, stud. I need to make the most of today's sun."
+                honeycrisp "Хмм, не прямо сейчас, жеребец. I need to make the most of today's sun."
                 honeycrisp "If you stick around tho', I'll give you one heck of a ride."
                 "Looks like Honeycrisp will only have sex with me after work."
                 jump farmmenu
-            "Visit Blossom" if blossomvisit == 0:
+            "Посетить Блоссом" if blossomvisit == 0:
                 scene bg farmkitchen with dissolve
                 scene bg blossombed with dissolve
                 $ blossomvisit = 1

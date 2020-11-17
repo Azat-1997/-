@@ -11,18 +11,18 @@ label morning:
         pass
     $ rand = renpy.random.randint(1,10)
     if rand == 1:
-        "I awaken well rested."
+        "Я проснулся, отлично выспавшись."
     elif rand == 2:
-        "Another wet dream, this place is getting to me."
+        "Еще один влажный сон, это место достает меня."
     else:
-        "Ahh, another morning."
+        "Ахх, очередное утро."
     $ rand = renpy.random.randint(1,3)
     if rand == 1:
-        "I crawl out of bed and stretch."
+        "Я выползаю из кровати и тянусь." #  I crawl out of bed and stretch.
     elif rand == 2:
-        "After five more minutes of snooze time, I get out of bed and go to shower."
+        "После ещё пяти минут дрема, я встаю с кровати и иду принимать душ." # After five more minutes of snooze time, I get out of bed and go to shower.
     else:
-        "*Yawwwn...* Guess it's time to get out of bed."
+        "*Зевок* Полагаю время вставать с постели." # *Yawwwn...* Guess it's time to get out of bed.
     jump afteraltmorning
     label altmorning:
         stop music
@@ -32,17 +32,25 @@ label morning:
                 $ rand = renpy.random.randint(1,3)
                 if rand == 1:
                     show moxie walthappy with dissolve
-                    moxie "Good morning, I was just about to go for a nap. Selene's lessons were really tough!"
-                    moxie "See ya later tonight."
+                    moxie "Доброе утро, я была готова вырубиться в любой момент. Уроки Селены были реально тяжелы!"
+                    # Good morning, I was just about to go for a nap. Selene's lessons were really tough!
+                    moxie "Увидимся позже этой ночью" # See ya later tonight.
                 elif rand == 2:
-                    "Looks like Moxie is asleep right now. She often sleeps into the afternoon with her evening lessons."
+                    "Мокси выглядела сейчас спящей. Она часто спала после полудня от своих вечерних занятий."
+                    # Looks like Moxie is asleep right now. She often sleeps into the afternoon with her evening lessons.
+
                 else:
                     show moxie whorny with dissolve
-                    moxie "Look who decided to finally show up! Hahah, you're such a player."
-                    mc "You know me, I can't say no."
-                    moxie "That's heckin' true! That's how you and I ended up rutting."
-                    moxie "Since you can't say no, how about a quickie before I nap and you work?"
-                    mc "You're on!"
+                    moxie "Посмотрите кто решил наконец-то показаться! Хахахах, ты ещё тот фраер."
+                    # Look who decided to finally show up! Hahah, you're such a player.
+                    mc "Ты же знаешь меня, Я не могу сказать \"нет\". "
+                    # You know me, I can't say no."
+                    moxie "Это чертовски верно! Вот так ты и я закончили брачные танцы."
+                    #  ??? That's heckin' true! That's how you and I ended up rutting.
+                    moxie "Раз уж ты не можешь сказать нет, как насчет по-быстрому сделать дела перед тем, как я вздремну, а ты продолжишь работать?"
+                    #
+                    mc "Ты в деле!" # Как пожелаешь! (???)
+                    #
                     scene bg moxiebedday with dissolve
                     show moxie doggystyle1 with dissolve
                     scene bg black with dissolve
@@ -50,40 +58,59 @@ label morning:
                 $ rand = renpy.random.randint(1,10)
                 if rand <5:
                     show moxie2 althappy with dissolve
-                    moxie "Oh hey! Glad I got to see you before I left for work, I was just leaving tho'."
-                    mc "Hiya Moxie, seeing your grin is a great way to start any day. See you this evening?"
+                    moxie "Ох хэй! Рада была увидеть тебя перед тем, как я ушла на работу, я просто свалила."
+                    #
+                    mc "Хия Мокси, увидеть твою ухмылку - отличный способ начать любой день. Увидимся вечером?"
+                    #
                     show moxie2 laughing with dissolve
-                    moxie "See you tonight!"
-                    "We hug and she pats me on the butt."
+                    moxie "Увидимся вечером!"
+                    "Мы обнимаемся и она гладит меня по заднице."
+                    #
+                    #
                     hide moxie with dissolve
                 elif rand == 10:
                     show moxie happy with dissolve
-                    moxie "Just the man I was hoping to see!"
-                    mc "Hey Moxie, what's up?"
-                    moxie "You've been out all night, so you're probably going to want a shower, right?"
-                    mc "Sure am."
-                    moxie "Well, I was just about to shower, so how about it?"
-                    mc "Sounds efficient."
-                    moxie "Efficient isn't quite the word I'd use... Come, come!"
+                    moxie "Как раз тот человек, которого я надеюсь увидеть!"
+                    #
+                    mc "Эй Мокси, как дела?"
+                    #
+                    moxie "Тебя не было всю ночь, так что ты вероятно захочешь принять душ, верно?"
+                    #
+                    mc "Конечно."
+                    #
+                    moxie "Хорошо, я как раз собиралась принять душ, так как насчет этого?"
+                    #
+                    mc "Звучит целесообразно."
+                    #
+                    moxie "елесообразно - это не то слово, которое я бы использовала... Подходи, подходи!"
+                    # Ц
                     hide moxie with dissolve
-                    "We fuck in the shower before she leaves for work."
+                    "Мы ебалися в душе перед тем как она ушла работать."
+                    #
                     scene bg black with dissolve
                 elif rand >=5:
-                    "Looks like Moxie has already left."
+                    "Похоже на то, что Мокси уже ушла."
+                    #
             pass
         elif livingwithbutters == 1:
             scene bg buttershouse with dissolve
             show butters dresshappy with dissolve
             $ rand = renpy.random.randint(1,3)
             if rand == 1:
-                butters "Good morning! Guess I better get used to Mr. Popular not appearing some nights."
-                mc "Heh, maybe. I'm gonna get a shower."
-                butters "Okie dokie, it's all yours."
+                butters "Утро доброе! Полагаю мне лучше привыкнуть к тому, что мистер Популярный не появляется по ночам."
+                #
+                mc "Хех, может быть. Я собираюсь принять душ."
+                #
+                butters "Оки-доки, он весь твой."
+                #
             elif rand == 2:
-                butters "Hello [playername]! I was just about to start a tasty cooked breakfast, if you get a shower now it should be done when you're finished."
-                mc "Awh perfect, thanks Butters."
+                butters "Здравствуй [playername]! Я почти начала готовить вкусный завтрак, если ты примешь душ сейчас он должен быть готов когда ты закончишь."
+                #
+                mc "Ох идеально, спасибо Баттерс."
+                #
             elif rand == 3:
-                butters "Welcome back, hope you weren't having too much fun without me, hehe. My succubus side might end up jealous."
+                butters "С возвращением, надеюсь ты не слишком много развлекался без меня, хехе. Моя суккубская сторона может и приревновать."
+                #
             scene bg buttershouse with dissolve
         else:
             pass
@@ -103,8 +130,10 @@ label morningvariables:
         $ galleryyear += 1
         if galleryyear == 365:
             "..."
-            "Damn, my gallery pass expired."
-            "I told you it would."
+            "Черт, мой пропуск в галерею просроен."
+            "Говорил тебе, что это произойдет."
+            #
+            #  / Я же предупреждал
             $ galleryypass = 0
     $ pauroras = 0
     $ cindysex = 0
@@ -161,57 +190,71 @@ label mail:
     hide moxie with dissolve
     if days >= 20 and bakeryvisits >= 1 and libraryvisit3 == 1 and auroravisitsetup == 0:
         $ auroravisitsetup = 1
-        "I have another magic mail, it's usually rare for me to get one of these."
-        "It's another mail from Queen Aurora! I would have assumed that she's too busy to even think about me."
-        "On the contrary, she's directly inviting me to visit her at the castle."
-        "Should I go now?"
+        "У меня очередное магическое письмо, обычно для меня это редкость получать одно из них."
+        #
+        "У меня очередное письмо от Королевы Авроры! Я бы предположил, что она слишком занята, чтобы даже думать обо мне."
+        #
+        "Наоборот, она непосредственно приглашает меня посетить её в замке."
+        #
+        "Должен ли идти сейчас?"
+        #
         menu:
-            "Yeah":
+            "Да":
+            #
                 jump auroravisit1
-            "Nah, I got stuff to do. (Visit her manually from the castle)":
+            "Не, У меня есть дела. (Посетить её лично в замке)":
+            #
                 pass
     if days == 3:
-        "Looks like I have a magic mail, it's a special type of letter with wings that automatically delivers itself."
-        "Woah! This is from Queen Aurora! It even has a fancy seal."
+        "Похоже у меня магическая почта, это специальный тип письма с крыльями, что автоматически доставляют себя."
+        #
+        "Вух! Это от Королевы Авроры! Оно даже имеет причудливая печать."
+        #
         if augustavisit == 2:
             "I wonder if this is about yesterday?"
-            "I timidly unwrap the letter and read it."
-            "'Greetings [playername]'"
+            #
+            "Я робко разворачиваю письмо и читаю его."
+            #
+            "'Приветствую [playername]'"
             "It's weird how she knows about me. She even called me by name yesterday, what's up with that?"
+            # Это странно, откуда она знает меня. Она даже звала меня по имени вчера?
         else:
-            "I timidly unwrap the letter and read it."
-            "'Greetings [playername]'"
-            "She knows my name?"
-        "'Your presence within Arcadia has been noted, attached to this letter is a summary of various laws and cultural differences to help you integrate into the world.'"
+            "Я робко разворачиваю письмо и читаю его."
+
+            "'Приветствую [playername]'"
+            "Она знает мое имя?"
+        "'Ваше присутствие в Аркадии было отмечено; к этому письму прилагается краткое изложение различных законов и культурных различий, которые помогут вам встроиться в мир.'"
         if augustavisit == 2:
-            "'Please behave yourself, I'm hoping to formally introduce myself to you soon. I apologize for the brief incident with Augusta."
-            "Please find the owner of the library, Lily, and talk to her.'"
+            "'Пожалуйста, ведите себя прилично, я надеюсь официально представиться вам в ближайшее время. Прошу прощения за краткий инцидент с Августой."
+            "Пожалуйста, найдите владельца библиотеки, Лили, и поговорите с ней.'"
         else:
-            "'Please behave yourself, I'm hoping to meet you one day if possible. Please find the owner of the library, Lily, and talk to her.'"
-        "How strange, yet sweet. The goddess of the land has sent me a care-package."
-        "There's even a cookie in here, 'baked this morning just for you.'"
-        "Thanks Aurora, I'll read through the other things later."
-        "Right now I need to get ready for work."
+            "'Пожалуйста, ведите себя прилично, Я надеюсь встретиться с вами когда-нибудь, если возможно. Пожалуйста, найдите владельца библиотеки, Лили, и поговорите с ней.'"
+            "Как странно, но мило. Богиня земли прислала мне посылку."
+            "Здесь даже есть печенье, \"испеченное сегодня утром специально для тебя\"."
+            "Спасибо, Аврора, остальное я прочитаю позже."
+            "Прямо сейчас мне нужно быть готовым к работе."
     elif days == 5:
-        "I think it's the weekend, but Arcadia doesn't use the same week system like my old world."
-        "Indeed, there are no days off in an old-fashioned locale like Arcadia, let's get to work."
+        "Я думаю это выходной, но Аркадия не использует ту же недельную систему, как мой старый мир."
+        "Действительно, в такой старомодной местности, как Аркадия, выходных не бывает, давайте приступим к работе."
     elif days == 7:
-        "I've finally been here a week, I admit that time has gone by quickly."
-        "I've spent almost every day doing something crazy and exciting."
-        "Here's to another wild day!"
+        "Я уже нахожусь здесь неделю, признаюсь, время прошло быстро."
+        "Почти каждый день я занимался чем-то сумашедшим и восхитительным."
+        "Еще один дикий день!"
+
     elif days == 14:
-        "It has been two weeks since I arrived! Doesn't time fly by?"
-        "I wonder what exciting adventure I'll get up to today."
+        "Уже прошло две недели с того момента, когда я прибыл! Не быстро ли летит время?"
+        "Интересно, какое захватывающее приключение мне предстоит сегодня."
     elif days == 31:
-        "I think it's been a month, there's a calendar in here, but I'm not paying enough attention to it as I perhaps should be."
-        "What a month it has been, living here has become as natural as my past life. In fact I can barely remember what my life was like before then."
-        "I can't imagine any life other than the one I'm living right now."
-        "It's a strange sensation, but I know I wake up every morning eager to meet the day."
+        "Я думаю это месяц, здесь есть календарь, но я не уделил ему достаточно внимания как следовало бы."
+        "Что за месяц это был, жить здесь стало таким естесственным как и моя прошлая жизнь. На самом деле я с трудом могу вспомнить, какой была моя жизнь до этого."
+
+        "Я не могу представить себе никакой жизни, кроме той, которой живу сейчас."
+        "Это странное ощущение, но я знаю, что я просыпаюсь каждое утро, чтобы с нетерпением встретить день."
     if auroravisit1 == 1 and selenevisit1 == 1 and boutiquevisit3 == 1 and farmvisit3 == 1 and barvisit2 == 1 and fr == 0:
         jump finalroute
     if annamilking == 7:
-        "Today's the day Anna gets milked at the barn, maybe I should go visit the farm for some fun."
-        "If I miss it today, I'll have to wait another week."
+        "Сегодня день, когда Анну доят в сарае, может мне стоит сходить на ферму повеселиться."
+        "Если я это пропущу, мне придется ждать еще одну неделю."
     scene bg black with dissolve
     if dawnvisit == 1 and libraryvisit3 == 1 and dawnltr == 0:
         $ dawnltr = 1
@@ -220,15 +263,15 @@ label mail:
             scene bg moxiewagonday with dissolve
         elif livingwithbutters == 1:
             scene bg buttershouse with dissolve
-        "Ah, I have some mail… Let’s see here…"
-        "’Hello Kitten’, ah, it’s from Dawn."
-        "Wait, it’s from Dawn?! How did she get my address?"
-        dawn "’I’m in need of a handsome man such as yourself, and you may be the only one that can satisfy my urgent desires.’"
-        "Is everything an innuendo for this girl?"
-        dawn "’Please visit the Bed of Chaos when it suits you and I shall make it more than worth your while…’"
-        "Despite the pretext, she obviously isn’t asking for sex, however, it feels like she’s using her sexuality to make me dance in her palm."
-        "Saying that, there’s no way I could turn this down."
-        "Well, it's morning now. So I'll have to wait until the evening before I go see her."
+        "А, у меня есть почта… Посмотрим…"
+        "’Привет Котеночек’, ах, это от Доун."
+        "Стоп, это от Доун?! Как она получила мой адрес?"
+        dawn "’Я нуждаюсь в красивом мужчине как ты, и ты можешь быть единственным кто сможет удовлетворить мои срочные желания.’"
+        dawn "’Пожалуйста, посетите Ложе Хаоса, когда вам это будет удобно, и я сделаю это более чем стоящим вашего времени ...’"
+        "Для этой девушки все - намеки?"
+        "Несмотря на предлог, она явно не просит секса, однако такое чувство, что она использует свою сексуальность, чтобы заставить меня танцевать у нее на ладони."
+        "Сказав это, я не могу отказаться."
+        "Что ж, сейчас утро. Так что мне придется подождать до вечера, прежде чем я пойду к ней."
     if dawnvisit == 3 and dawnltr == 1 and fr == 1:
         $ dawnltr = 2
         play ambience ambienceday
@@ -236,10 +279,10 @@ label mail:
             scene bg moxiewagonday with dissolve
         elif livingwithbutters == 1:
             scene bg buttershouse with dissolve
-        "Hm! I have a magic letter… Let’s see here."
-        "’Hello, my little kitten! I have a special labour of love that only a man of your abilities can accomplish. Come see me, any morning will do. TTFN, duckling!"
-        "Oh hey, she called me kitten and duckling simultaneously this time. I wonder if she just uses both for variety."
-        "I’m more than happy to go and see that girl again, I should go as soon as possible."
+        "Хм! У меня магическое письмо… Давайте посмотрим."
+        "’Привет, мой маленький котенок! У меня особая любовная работа, которую может выполнить только мужчина твоих способностей. Приходите ко мне, подойдет любое утро. Чао, утенок!"
+        "Эй, на этот раз она назвала меня котенком и утенком одновременно. Интересно, использует ли она и то, и другое для разнообразия."
+        "Я более чем счастлив снова встретиться с этой девушкой, мне нужно пойти как можно скорее."
 
 label events:
     ### events
@@ -253,20 +296,20 @@ label events:
                     scene bg buttershouse with dissolve
                     play ambience ambienceday
                     show butters dresshappy with d
-                    butters "Good morning. I got a magic mail from Lily inviting you and I to an outdoor sauna to have a break."
-                    butters "It seems everyone that was involved with Morrigan is invited, and the royal sisters organised it themselves."
-                    mc "Awesome, when can we go?"
-                    butters "The letter said to meet in the castle. Should we go now?"
+                    butters "Доброе утро. Я получила волшебное письмо от Лили, которая приглашает нас с тобой в сауну, чтобы отдохнуть на открытом воздухе."
+                    butters "Кажется, приглашены все, кто был связан с Морриган, и королевские сестры организовали это сами."
+                    mc "Круто, когда мы можем идти?"
+                    butters "Письмо говорит встретиться в замке. Должны ли мы идти сейчас?"
                 else:
                     scene bg moxiewagonday with dissolve
                     show moxie whappy with d
-                    moxie "Morning, tiger! I just got a magic mail from Lily inviting us to an outdoor sauna. Sounds like a perfect opportunity to relax."
-                    moxie "And almost everyone from the recent Morrigan incident is invited! The royal sisters organised it themselves."
-                    mc "Awesome, when can we go?"
-                    moxie "The letter said to meet in the castle. Wanna head out now?"
+                    moxie "Доброе утро, тигр! Я только что получила волшебное письмо от Лили, которая приглашает нас в сауну под открытым небом. Похоже, прекрасная возможность расслабиться"
+                    moxie "И приглашены почти все участники недавнего инцидента с Морриган! Королевские сестры организовали его сами."
+                    mc "Круто, когда мы можем идти?"
+                    moxie "Письмо говорит встретиться в замке. Хочешь выйти сейчас?"
 
-                "(100%% completion bonus unlocked at the Castle.)"
-                "(Activating this bonus will end the game, be sure to have an additional save beforehand.)"
+                "(100%% бонус завершения разблокирован в Замке.)"
+                "(Активация этого бонуса завершает игру, обязательно заранее сделайте дополнительное сохранение.)"
                 $ worldmap = 3
                 jump prefinalworldmap
     pass
@@ -287,39 +330,44 @@ label events:
         ###
         $ rand = renpy.random.randint(1,2)
         if rand == 1:
-            "I finish showering and eat breakfast. As I finish up, Butters gets dressed and joins me in the living room."
+            "Я закончил мыться и есть завтрак. Когда я закончил, Баттерс оделась и присоединилась ко мне в гостинной."
+            #
         elif rand == 2:
-            "I do my morning routine and have breakfast with Butters."
+            "Я делаю утренние дела и завтракаю с Баттерс."
+            #
         $ rand = renpy.random.randint(1,3)
         if rand == 1:
             show butters succubus with dissolve
-            "Who has incidently has turned into a succubus again."
+            "Кто, кстати, превратился в суккуба снова."
+            #
             $ rand = renpy.random.randint(1,2)
             if rand == 1:
-                butters "I hope I'm not the only one that woke up with morning wood."
+                butters "Надеюсь я не единственная, кто проснулся в утреннем лесу."
             elif rand == 2:
-                butters "This normal food sucks, I want some cum!"
+                butters "Это нормальная еда отстой, Я хочу немного кончи!"
             jump butterssuccmenu
         else:
             show butters dresshappy with dissolve
             $ rand = renpy.random.randint(1,3)
             if rand == 1:
-                butters "Any plans for today?"
+                butters "Есть планы на сегодня?"
             elif rand == 2:
-                butters "I'm leaving in a few minutes, let me know if you want to come spelunking with me."
+                butters "Я живу в нескольких минутах, дай мне знать если хочешь исследовать пещер со мной."
+                #
             else:
-                butters "I always love the morning."
+                butters "Я всегда люблю утро."
             jump buttersnormalmenu
     else:
         pass
     $ rand = renpy.random.randint(1,3)
     if rand == 1:
-        "I do my morning routine and then head out."
+        "Я делаю утреннюю рутину и выхожу."
     elif rand == 2:
-        "After some breakfast, I get ready to go to work. Wherever that may be today."
+        "После завтрака, я готов идти работать. Где бы это ни было сегодня."
+        #
     else:
-        "Well, that's just about everything done for this morning. Where to today?"
-
+        "Так, на это утро почти все сделано. Куда сегодня?"
+        #
     if buttersthirdvisitsetup == 1:
         $ buttersthirdvisitsetup = 0
         jump forestvisit3
