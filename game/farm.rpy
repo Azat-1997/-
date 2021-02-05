@@ -177,34 +177,34 @@ label farm:
                             honeycrisp "О чем ты? Ты когда-нибудь собираешься устроиться на постоянную работу?"
                             mc "Это хороший вопрос, вероятно, я бы получал больше, если бы специализировался на одной карьере."
                             show honeycrisp nclaughing with dissolve
-                            honeycrisp "Y'all always welcome to make working here your career, although if you do we won't be able to have children to run the place after us, ahaha!"
-                            mc "That's very cheeky of you to presume, haha."
-                        "Ask what Honey does in her free time":
-                            honeycrisp "Now that I've actually got free time, I've been getting out more and visiting friends."
-                            mc "Anyone in particular?"
-                            honeycrisp "I like to pop down to the Riding Mare for a pint of cider and Ruby often visits."
-                            honeycrisp "It may be the cider I make, but it's even more satisfying drinking with friends."
-                            honeycrisp "Sometimes me and Ruby go to a nearby nightclub too, that's always a great night out."
-                            mc "I should join you sometime."
-                            honeycrisp "Absolutely! Three's a crowd!"
-                            honeycrisp "I'd give you a specific time and date, but the fun of visiting the nightclub and bar is just seeing who's there!"
+                            honeycrisp "Tы всегда можешь сделать работу здесь своей карьерой, хотя, если ты это сделаешь, у нас не будет детей, которые будут преследовать нас, ахаха!"
+                            mc "Это очень дерзкое заявление, ха-ха"
+                        "Спросить Хони, что она делает в свободное время":
+                            honeycrisp "Теперь, когда у меня действительно есть свободное время, я все больше выхожу из дома и навещаю друзей."
+                            mc "Кого конкретно?"
+                            honeycrisp "Я люблю заскочить в «Верховую кобылу» за пинтой сидра, и Руби часто навещает меня."
+                            honeycrisp "Возможно, это сидр, который я делаю, но пить с друзьями еще приятнее."
+                            honeycrisp "Иногда мы с Руби также ходим в ближайший ночной клуб, это всегда отличная ночь."
+                            mc "Я должен присоединиться к вам когда-нибудь."
+                            honeycrisp "Не то слово! Третьим будешь!"
+                            honeycrisp "Я бы назначила тебе свидание, но в этом и фишка клуба: ты не знаешь кого и когда там встретишь."
                         "Назад":
                             jump farmmenu
                     $ honeycrisptalks = 1
                     jump farmmenu
             "Секс" if ashoney == 0:
                 $ ashoney = 1
-                honeycrisp "Хмм, не прямо сейчас, жеребец. I need to make the most of today's sun."
-                honeycrisp "If you stick around tho', I'll give you one heck of a ride."
-                "Looks like Honeycrisp will only have sex with me after work."
+                honeycrisp "Хм, не сейчас, жеребец. Мне нужно максимально использовать сегодняшнее солнце."
+                honeycrisp "Если ты останешься здесь, то я устрою тебе родео."
+                "Похоже, Ханикрисп будет заниматься со мной сексом только после работы."
                 jump farmmenu
             "Посетить Блоссом" if blossomvisit == 0:
                 scene bg farmkitchen with dissolve
                 scene bg blossombed with dissolve
                 $ blossomvisit = 1
-                "I go into the farmhouse and visit Blossom, she seems to be lazing around in her bedroom and hasn't left for college yet. I should have an hour to talk or play with her."
+                "Я захожу в фермерский дом и навещаю Блоссом, она, кажется, бездельничает в своей спальне и еще не уехала в колледж. У меня должен быть час, чтобы поговорить или порезвиться с ней."
                 jump blossomvisit
-            "Visit and work with Anna (This will take all day)":
+            "Прийти с визитом и помочь Анне (Это займет целый день)":
                 jump annavisit
             #"Replay a Scene":
                 #menu:
@@ -219,102 +219,102 @@ label farm:
                         #jump blossomcowgirl
                     #"Back":
                         #jump farmmenu
-            "Back to World Map":
+            "Назад к карте":
                 if fr == 1:
                     jump prefinalworldmap
                 jump preworldmap
     label farmvisit1:
         stop music fadeout 30.0
-        "I’ll go work at the farm; if I recall the mare running the place has an injury, helping her is fair incentive."
-        "It’s a ten-minute walk away past the river, I best head out quickly. "
+        "Я пойду работать на ферму; если я правильно помню, то пробегавшая здесь кобыла ранена, помочь ей - достойное намерение."
+        "Это в десяти минутах ходьбы реки, я лучше пойду быстрее."
         scene bg farm with dissolve
         show bg farm with dissolve
-        "Upon arriving I see a massive plantation, apple trees stretching far as the eye can see, although on closer inspection the trees are blending into the forest behind the farm’s perimeter."
-        "There are various crops scattered around, however, I can’t identify any because they’re far from flowering."
-        "Roughly in the centre there is a house with a barn at the side, I step past a fence and make my way to the farmhouse."
-        "I walk up to the farmhouse and I’m just about to knock before I hear someone call out to me."
-        "An orange mare that was hidden away behind a wagon appears, waving and gesturing for me to come over."
+        "По прибытии я вижу огромную плантацию с яблонями, простирающимися далеко, насколько хватает глаз, хотя при ближайшем рассмотрении деревья переходят в лес за периметром фермы."
+        "Вокруг разбросаны разные культуры, но я не могу определить ни одной, потому что они еще далеки от цветения."
+        "Примерно в центре находится дом с сараем сбоку, прохожу мимо забора и иду к ферме."
+        "Я подхожу к ферме и уже собираюсь постучать, прежде чем слышу, как кто-то зовет меня."
+        "Появляется оранжевая кобыла, спрятанная за повозкой, машет мне рукой и жестом показывает, чтобы я подошел."
         show honeycrisp happy with dissolve
-        "As I get closer, her figure comes into sight, and I notice she has her right hand in a cast."
-        "Wow, I could grind cheese on those abs."
-        "And her breasts are huge"
-        mc "Good morning, you must be Honeycrisp?"
+        "Когда я подхожу ближе, появляется ее фигура, и я замечаю, что ее правая рука в гипсе."
+        "Ух ты, я мог бы натереть сыр на этом прессе."
+        "И ее груди огромны..."
+        mc "Доброе утро, ты должно быть Ханикрисп?"
         show honeycrisp laughing with dissolve
         if bakeryvisit1 == 1:
-            honeycrisp "Howdy stranger! I believe you were the 'hairless stallion' at Cream's party right? But ain't you something, you ain't much of a stallion at all."
+            honeycrisp "Привет, незнакомец! Я полагаю, что это ты тот «лысый конь» с вечеринки Cream? Но ты совсем не похож на жеребца."
         else:
-            honeycrisp "Howdy stranger, I was told to expect someone that looks like a hairless stallion, but ain’t you something, ain’t much of a stallion at all."
-        mc "I guess not, but I’m good to work like the rest."
+            honeycrisp "Привет незнакомец, Мне сказали ожидать кого-то, кто будет похож на лысого коня, но ты что-то вроде на жеребца совсем не похож."
+        mc "Думаю, что нет, но я хорош в работе, как и все остальные."
         show honeycrisp happy with dissolve
-        honeycrisp "That’s fantastic news sugar, really appreciate ya coming here"
+        honeycrisp "Это новый сахар - фантастика, очень признательна что ты сюда пришел."
         show honeycrisp neutral with dissolve
-        honeycrisp "You came just in time, I’ve been struggling to keep up the farm alone with mah dang cast and I'm running behind on apple deliveries."
-        mc "You’re working here on your own? But this farm is massive!"
+        honeycrisp "Вы приехали как раз вовремя, я изо всех сил стараюсь поддерживать ферму в одиночестве с моим чертовым гипсом, и я отстаю по доставке яблок."
+        mc "Ты здесь работаешь самостоятельно? Но эта ферма огромная!"
         show honeycrisp laughing with dissolve
-        honeycrisp "Yup, it’s more of a recent thing unfortunately, things around ‘ere have halted and the injury certainly hasn’t helped."
+        honeycrisp "Ага, к сожалению, это произошло совсем недавно, все вокруг остановилось, и травма определенно не помогла."
         show honeycrisp sad with dissolve
-        honeycrisp "Big issue is, I have some early varieties of apples that need picking and I just can’t do it... No matter how hard I try... I can’t use a ladder and pluck apples with this darn cast slowing me down."
-        mc "Don’t worry about it, you shouldn’t push yourself, just show me where the trouble is."
+        honeycrisp "Большая проблема в том, что у меня есть несколько ранних сортов яблок, которые нужно собирать, и я просто не могу этого сделать ... Как бы я ни старалась ... Я не могу использовать лестницу и срывать яблоки с этим чертовым гипсом, который меня тормозит."
+        mc "Не беспокойся об этом, не надо себя заставлять, просто покажи мне, в чем проблема."
         show honeycrisp laughing with dissolve
-        honeycrisp "’ppreciate it friend. Let’s get right to it, there’s a ladder in the barn, lemme show ya."
+        honeycrisp "Ценю это, дружище. За дело, в сарае есть лестница, дай покажу тебе."
         hide honeycrisp with dissolve
         show bg farm2 with dissolve
         play music farm fadein 5.0
-        "She’s not wasting any time as she marches ahead, doesn’t look like she’ll let her injury slow her down even a little, I follow briskly from behind."
-        "We start with a few nearby trees as she demonstrates how to safely secure the ladder in place."
+        "Она не теряет времени даром, идя впереди, не похоже, что она позволяет своей травме хоть немного замедлить ее, я бегло слежу за ней."
+        "Мы начнем с нескольких ближайших деревьев, пока она демонстрирует, как безопасно закрепить лестницу на месте."
         show honeycrisp happy with dissolve
-        honeycrisp "When you pick ‘em, come down the ladder and place them in gently. If you drop ‘em they’ll smash, and I need to make sure mah goods are of pristine quality for the customers."
-        mc "Okay, so I’ll pick a few, carry them down, place them in the basket, no problem."
+        honeycrisp "Когда ты выберешь их, спустись по лестнице и аккуратно положи их. Если ты уронишь их, они разобьются, а мне нужно убедиться, что товары безупречного качества для покупателей."
+        mc "Хорошо, я возьму несколько, отнесу их вниз, положу в корзину, без проблем."
         hide honeycrisp happy with dissolve
         show bg farm3 with dissolve
         play sound move
-        "I head up the ladder, it’s surprisingly high but I’m not one to be particularly afraid of heights, but I felt particularly uneasy at the fact I had to outstretch myself to reach some apples."
-        "With Honey at the bottom of the ladder, I hope my butt and nutsack look good from this angle."
+        "Я поднимаюсь по лестнице, она на удивление высока, но я не из тех, кто особенно боится высоты, но мне было особенно неловко из-за того, что мне пришлось вытягиваться, чтобы дотянуться до нескольких яблок."
+        "Хани внизу у лестницы, Я надеюсь моя задница и \"ореховый мешок\" выглядят хорошо, с этого угла."
         show bg farm2 with dissolve
-        "Thankfully, there wasn’t much foliage in the way. I collect a couple of apples and descend the ladder."
+        "К счастью, на пути не было много листвы. Собираю пару яблок и спускаюсь по лестнице."
         show honeycrisp closehorny with dissolve
-        "Honeycrisp was at the bottom rung keeping the ladder in place. I don’t think she needed to do that, but I felt appreciative nonetheless, albeit slightly vulnerable at the fact she could see my butt."
-        honeycrisp "Alright stud, we’re going to move the ladder ninety degrees and pick the next quart of the tree dry. If you ever fill one of these baskets, I’ll head back to the barn, empty it, then come back."
-        "Stud? Isn't that what you call the stallion that fucks all the mares in the farm?"
-        "I could feel my cheeks get a little hot when she said that."
+        "Ханикрисп стояла на нижней ступеньке, удерживая лестницу на месте. Не думаю, что ей нужно было это делать, но тем не менее я чувствовал благодарность, хотя и немного уязвимость из-за того, что она видела мою задницу."
+        honeycrisp "Хорошо, жеребец, мы собираемся сдвинуть лестницу на девяносто градусов и собрать все следующей четверти дерева. Когда ты наполнишь одну из этих корзин, я пойду обратно в сарай, освобожу ее и вернусь"
+        "Жеребец? Разве это не то, кого вы называете конем, который трахает всех кобыл на ферме??"
+        "Когда она это сказала, я почувствовал, как мои щеки немного вспыхнули."
         show honeycrisp happy with dissolve
-        mc "You got it boss! I’ll have this tree done in no time."
+        mc "Будет сделано! Я закончу с этим деревом в кратчайшие сроки."
         show honeycrisp horny with dissolve
-        honeycrisp "Y’all not bad to be honest, Penelope done good finding a physically fit man like you to help a gal out."
-        mc "Aha, you’re flattering me. I’m simply happy to help, I need to earn my pay to stay."
-        honeycrisp "You’ll earn more than just pay at this rate!"
-        "More than money? I’m guessing she’s not just talking about respect and admiration."
-        "I’m finding Honeycrisp’s up and at ‘em, get what you want attitude endearing."
-        "She laughs to herself as she scoops up a full apple basket in one arm and takes it away. Her arm strength must be insane to do that, these baskets would be heavy for me with both arms."
+        honeycrisp "А ты неплох, честно говоря, Пенелопа хорошо справилась, найдя физически здорового мужчину вроде тебя, чтобы он помог девушке."
+        mc "Ага, ты мне льстишь. Я просто рад помочь, мне нужно заработать деньги, чтобы остаться."
+        honeycrisp "Ты заработаешь больше, чем эту ставку!"
+        "Больше чем деньги? Я полагаю, что она говорит не о уважении и восхищении."
+        "Я вижу Ханикрисп бодрой и готовой свернуть горы."
+        "Она смеется про себя, берет в одну руку полную корзину с яблоками и уносит ее. Сила её руки должна быть невероятной, чтобы сделать это, эти корзины были бы тяжелы для меня с обеими руками."
         show honeycrisp laughing with dissolve
-        honeycrisp "Well, I'll be right back, keep at it stud."
+        honeycrisp "Хорошо, я скоро вернусь, оставайся здесь, жеребец."
         hide  honeycrisp laughing with dissolve
-        "Okay, with her returning the basket to the barn, I have half this tree left."
+        "Хорошо, когда она вернула корзину в сарай, у меня осталась половина этого дерева."
         show bg farm3 with dissolve
         play sound move
-        "I must admit, I’m building a sweat even though it has only been ten minutes…"
-        "How many trees do I have to do?"
-        "I take a peek to my right and see a row of similar looking trees stretching out until it becomes an amorphous blur of foliage."
-        "Oh no, I’m going to be here forever and I’m already sweating after ten minutes."
+        "Я должен признать,Я весь в поту, хотя прошло только 10 минут…"
+        "Сколько ещё деревьев я должен сделать?"
+        "Я смотрю направо и вижу ряд похожих на вид деревьев, тянущихся до тех пор, пока он не превращается в аморфное пятно листвы."
+        "Ox нет, я собираюсь остаться здесь навсегда, а я уже потею спустя 10 минут."
         show bg farm2 with dissolve
         show honeycrisp laughing with dissolve
-        "Honeycrisp returns and pops the basket down, it took her a surprisingly long time to get the basket all the way there and back, I’ve nearly filled up the next basket."
-        honeycrisp "With the two of us working through this together, it’ll take no time at all! Usually I carry the baskets back and forth myself, so it takes twice as long."
+        "Ханикрисп возвращается и опускает корзину вниз. Ей потребовалось удивительно много времени, чтобы переместить корзину туда и обратно, я почти заполнил следующую корзину."
+        honeycrisp "Когда мы вдвоем будем работать над этим вместе, это совсем не займет времени! Обычно я сама ношу корзины туда и обратно, поэтому на это уходит вдвое больше времени."
         show honeycrisp happy with dissolve
-        mc "This is perfect then, let no injury slow us down, we’ll harvest these apples twice as fast!"
-        "Honeycrisp bounces and pumps her fist in the air proudly. I could feel her infectious pride and energy fill me up."
+        mc "Тогда это прекрасно, пусть никакие травмы не замедлят нас, мы будем собирать эти яблоки в два раза быстрее!"
+        "Ханикрисп подпрыгивает и гордо поднимает кулак в воздух. Я чувствовал, как меня наполняют ее заразительная гордость и энергия."
         show honeycrisp laughing with dissolve
-        honeycrisp "Heck yeah, that’s the spirit!"
+        honeycrisp "Да, черт возьми, вот это дух!"
         show honeycrisp horny with dissolve
-        honeycrisp "I’ve missed having support like this, keep it up sugar!"
+        honeycrisp "Мне не хватало подобной поддержки, так держать, сахарок (сладенький/душка/голубчик) !"
         hide honeycrisp horny with dissolve
-        "She takes the next basket and heads off grinning to herself.  After seeing her earnest smile, I feel more motivated now than when I had started."
-        "It’s hard to believe she has been running this entire farm all by herself with that injury."
+        "Она забирает слеующую корзину и уходит усмехаясь про себя. После того, как я увидел её улыбку до ушей, я чувствую себя сейчас более мотивированным, чем когда я начал."
+        "Трудно поверить, что c этой травмой она сама управляла всей этой фермой."
         show bg farm3 with dissolve
-        "I move the ladder to the next tree and keep filling basket after basket, I can feel myself getting faster as my movements become muscle memory."
+        "Я передвигаю лестницу к следующему дереву и я продолжаю заполнять корзину одну за одной, Я могу чувствовать себя ускоренным так как мои движения переходят в мышечную память."
         show bg farm4 with dissolve
         stop music fadeout 10.0
-        "Even under the sweltering sun the shade from the apple trees prevent overheating."
+        "Даже под палящим солнцем тень от яблонь предохраняет от перегрева."
         show bg farm3 with fade
         play sound move
         pause 0.5
@@ -324,98 +324,99 @@ label farm:
         show bg farm3 with fade
         play sound move
         pause 0.5
-        "Onto the next tree, and the next, and the next. It’s menial work, but with each filled basket I look forward to Honey returning and delivering another motivational quip."
+        "На следующее дерево, и следующее, и следующее. Это черная работа, но с каждой заполненной корзиной я с нетерпением жду, когда Хани вернется и сделает еще одну мотивационную шутку."
         show bg farm2 with dissolve
-        honeycrisp "Heyyy, stud! Time for a break!"
-        "My ears perk, ‘stud’ again."
-        "I look back towards the farmhouse and I can see Honeycrisp shouting and waving from beyond the fence."
-        "I had lost track of time; I was more or less automatically plucking apples while lost in thought."
-        "I step down the ladder and enjoy a cathartic stretch. I bring the final basket back on my way, which is thankfully only half full and thus not heavy."
+        "Меня снова назвали 'жеребцом'."
+        honeycrisp "Хэййй, жеребец! Время перерыва!"
+        "Я оглядываюсь в сторону фермерского дома и вижу, как Ханикрисп кричит и машет руками из-за забора."
+        "Я потерял счет времени; Я более или менее автоматически собирал яблоки, погрузившись в размышления."
+        "Я спускаюсь по лестнице и наслаждаюсь расслабляющей растяжкой. Я беру с собой последнюю корзину, которая, к счастью, заполнена только наполовину и поэтому не тяжелая."
         show bg farm with dissolve
         show honeycrisp laughing with dissolve
-        honeycrisp "Well, I’ll be, amazing work! Everything’s all coming together, thought I’d treat ya with something special."
-        mc "Special?"
+        honeycrisp "Ну ладно, отличная работа! Все идет своим чередом, полагаю что я угощу тебя чем-то особенным."
+        mc "Особенным?"
         show honeycrisp happy with dissolve
         show bg farm5 with dissolve
         play music castle fadein 10.0
-        honeycrisp "Over here, got some homebrew for you to try out."
-        "She leads me to a picnic bench cosy in the shade generated by the farmhouse, where I spot two empty glasses and an ice-cold pitcher of cider."
-        "Pouring us both a glass, a few ice cubes drop into mine. This is perfect, just what I needed after working up a sweat."
-        honeycrisp "This is mah first month making some of my own for proper, and you are my first proper customer, though this one’s on the house! What do you think?"
-        "I take a sip at first, but as soon as it hits my lips, I realize how parched I am and take a longer gulp."
-        "Savouring the taste, it’s sweet and pleasantly dry. I’m no stranger to the taste of cider but this far exceeds the taste of anything I’ve bought at a bar."
+        honeycrisp "Здесь есть домашний сидр, тебе на пробу."
+        "Она ведет меня к скамейке для пикника, уютной в тени фермерского дома, где я замечаю два пустых стакана и ледяной кувшин сидра."
+        "Наливая нам обоим стакан, в мой она уронила несколько кубиков льда. Это идеально, как раз то, что мне нужно после работы в поту."
+        honeycrisp "Это мой первый месяц производства чего-либо для собственных нужд, и ты мой настоящий первый клиент, хотя и тот в доме! Что ты думаешь?"
+        "Сначала я делаю глоток, но как только он попадает мне в губы, я понимаю, насколько я пересох, и делаю глоток еще раз."
+        "На вкус сладкое и приятно сухое. Я не новичок в вкусе сидра, но он намного превосходит вкус всего, что я купил в баре."
         if barvisit1 == 1:
-            "This is the same stuff Riku had in her refridgerator, but it tastes even fresher and richer."
+            "Это то же самое, что было у Рики в холодильнике, но на вкус оно еще свежее и богаче."
         show honeycrisp laughing with dissolve
-        mc "Mmmm, this is delectable, genuinely the best cider I’ve ever had."
+        mc "Мммм, это восхитительно, действительно лучший сидр, который я когда-либо пробовал."
         show honeycrisp happy with dissolve
-        honeycrisp "Ay, I agree, no one quite makes cider like my ol’ paps."
+        honeycrisp "Даа... Соглашусь, никто не делает сидр как мой старый папаша."
         show honeycrisp neutral with dissolve
-        honeycrisp "This is his secret recipe, maybe it isn’t as good as he used to make it, but judging from your reaction, looks like I lived up to his name."
+        honeycrisp "Это секретный рецепт, может не так хорош как он привык делать, но судя по твоей реакции, похоже я оправдала его имя."
         show honeycrisp happy with dissolve
-        mc "You certainly did."
-        "I take another sip, feeling refreshed."
+        mc "Конечно ты оправдала."
+        "Я делаю еще один глоток, чувствуя себя отдохнувшим."
         show honeycrisp neutral with dissolve
-        honeycrisp "Paps passed a few months back, it was a surprise. Means I have to look after this entire place by myself, rather than the two of us."
-        mc "That’s really recent… I’m sorry to hear that."
+        honeycrisp "Папаша ушел несколько месяцев назад, это был сюрприз. Значит, я должнa присматривать за всем этим местом в одиночку, а не вдвоем."
+        mc "Это действительно недавно… Мне жаль слышать это."
         show honeycrisp shy with dissolve
-        honeycrisp "Figured you should know the backstory of the farm if you’re going to work here."
-        mc "You don’t have to say anything if you don’t want to."
-        honeycrisp "Yeah, I know sugar… But it must be a ridiculous sight, seeing a damaged mare trying desperately to keep this place going."
-        mc "I don’t think it’s ridiculous at all, I’ve seen how hard you’re working, and I think it’s admirable."
+        honeycrisp "Я тут подумала, что тебе следует знать предысторию фермы, если ты собираешься здесь работать."
+        mc "Тебе не нужно ничего рассказывать если ты этого не хочешь."
+        honeycrisp "Ага, Я знаю сахарок… Но это должно быть смешное зрелище - видеть поврежденную кобылу, отчаянно пытающуюся сохранить это место."
+        mc "Я совершенно не считаю это нелепым, я видел, как много ты работаешь, и считаю, что это достойно восхищения."
         show honeycrisp sad with dissolve
-        honeycrisp "I would be working harder if it wasn’t for my wrist. They said it’ll take seven or eight weeks to heal, but I don’t have a second to spare on the farm."
-        honeycrisp "It’s just me and mah sister now, and I need to do everything I can just to ensure we have a profitable harvest."
-        mc "I’ve been wondering, what’s wrong with your wrist?"
+        honeycrisp "Я бы работала усерднее, если бы не мое запястье. Они сказали, что оно займет 7 или 8 дней на восстановление, но я не имею второй про запас на ферму."
+        honeycrisp "Здесь есть только я и моя сестра сейчас, и мне нужно сделать все, только так я могу убедиться, что мы имеем прибыльный урожай."
+        mc "Я все задаюсь вопросом: что не так с твоим запястьем?"
         show honeycrisp neutral with dissolve
-        honeycrisp "Mmphh… Well sugar…"
-        honeycrisp "I told people I fell from a ladder but I kinda haven’t told anyone else the truth, it’s too humiliating to say."
+        honeycrisp "Мммм… Так, сахарок…"
+        honeycrisp "Я говорила всем, что я упала с лестницы, но я, в каком-то смысле, никому не говорила правду, это слишком унизитиельно, чтобы сказать."
         show honeycrisp happy with dissolve
-        honeycrisp "I feel like I should tell you though, maybe it’s because you’re a new face, but I reckon I can trust ya."
-        honeycrisp "Promise to keep it between us?"
-        mc "Of course, I promise."
+        honeycrisp "Хотя, я чувствую что мне слудует тебе рассказать, может это потому что ты новичок, но думаю я могу тебе доверять."
+        # I feel like I should tell you though, maybe it’s because you’re a new face, but I reckon I can trust ya.
+        honeycrisp "Обещаешь оставить это между нами?"
+        mc "Конечно, Я обещаю."
         show honeycrisp shy with dissolve
-        honeycrisp "Well, aha… I fractured the bone because I got into a fight with a tree and lost."
-        mc "You punched a tree?"
+        honeycrisp "Ну, ехе… Я разбила кость потому что я сражалась с деревом и проиграла."
+        mc "Ты ударила дерево?"
         show honeycrisp neutral with dissolve
-        honeycrisp "*Sigh*, yeah… I was really frustrated, ya’know?"
-        honeycrisp "It was just after the funeral, and I didn’t have time to grieve."
+        honeycrisp "*Вздох*, да… я была действительно расстроена, знаешь?"
+        honeycrisp "Это было сразу после похорон, и у меня не было времени горевать."
         show honeycrisp sad with dissolve
-        honeycrisp "I was already working twice as hard, no other family around here to speak of and I couldn’t tarnish my sister’s education by asking her to quit college."
-        honeycrisp "I was about to carry some apples back on my own, but the basket broke, some apples fell, smashed and got covered in mud."
+        honeycrisp "Я уже работала в два раза усерднее, здесь нет другой семьи, чтобы поговорить об этом и я не могла запороть образование сестры, прося её уйти из колледжа."
+        honeycrisp "Я собиралась сама отнести яблоки, но корзина сломалась, некоторые яблоки упали, разбились и покрылись грязью."
         show honeycrisp neutral with dissolve
-        honeycrisp "It may have been a small thing, but to me that was mah breaking point."
+        honeycrisp "Возможно это была мелочь, но для меня это было моей точкой кипения."
         show honeycrisp angry with dissolve
-        honeycrisp "I was so pissed, I full force punched the tree, didn’t think for a second."
-        mc "Ouch… That must have really hurt."
+        honeycrisp "Я была так зла, Я ударила по дереву со всей дури,не думая ни секунды."
+        mc "Оуч... Должно быть это действительно больно."
         show honeycrisp satisfied with dissolve
-        honeycrisp "It really hurts my pride admitting it. Whatever pride I have left."
+        honeycrisp "Признаться, это серьезно уязвило мою гордость. Какая бы гордость у меня не осталась."
         show honeycrisp sad with dissolve
-        honeycrisp "I feel pathetic, it’s not like me to do something so darn stupid. But sometimes in these moments ya just don’t think."
-        mc "Your emotions must have been stirring, I can understand that you’d be frustrated and lash out."
-        mc "Everyone has their weak moments, and they don’t necessarily reflect you as a person, your personality."
+        honeycrisp "Я чувствовала сожаление, не по мне делать что-то настолько чертовски тупое. Но в такие моменты ты не думаешь."
+        mc "Твои чувства должно быть бурлят через край, я могу понять что ты была разочарована и сорвалась."
+        mc "Каждый имеет свои моменты слабости, и они не обязательно отражают тебя как личность, твою индивидуальность."
         show honeycrisp shy with dissolve
-        honeycrisp "Heh, lash out, it is like me to lash out on a tree of all things. Don’t think I have the heart to be that mean to a person."
+        honeycrisp "Хех, наброситься, это похоже на меня, чтобы наброситься на дерево из-за всех вещей. Не думай, что у меня хватит духу быть такой грубой с человеком."
         show honeycrisp satisfied with dissolve
-        honeycrisp "Phew… It feels good to finally tell someone that."
+        honeycrisp "Фух… Хорошо, что я наконец-то кому-то рассказала об этом."
         show honeycrisp closesatisfied with dissolve
-        "Honeycrisp surprises me by closing in for a hug, her overly large breasts nonchalantly pressing against my chest and catching me off guard as I awkwardly hug back."
+        "Ханикрисп удивила меня приближением для объятия, её чрезмерно огромные груди непосредственно давили на встречу моей и заставая меня врасплох, я неловко обнял в ответ."
         show honeycrisp closehorny with dissolve
-        honeycrisp "Heck, sorry about these large jugs getting in the way, I hope my nipples didn’t poke ya."
-        mc "It’s fine, they were nice and soft."
-        honeycrisp "I can hug you again if you’d like stud, heh."
+        honeycrisp "Черт, извини за эти большие бидоны встающие на пути, Я надеюсь мои сосыки не тыкают тебя."
+        mc "Все нормально, они были приятными и мягкими."
+        honeycrisp "Я могу обнять тебя снова если тебе это понравилось, жеребец, хех."
         menu:
-            "(Hug her again.)":
+            "(Обнять её снова.)":
                 show honeycrisp closesatisfied with dissolve
-                "We reembrace and this time I do indeed feel her nipples poking against my chest, maybe it’s because I’m paying close attention, or perhaps they weren’t erect before."
+                "Мы вновь обнимаемся и в этот раз я в самом деле чувствую её соски упирающийеся в мою грудь, может это из-за того что я обращаю пристальное внимание, или возможно они не были эрегированными прежде."
                 show honeycrisp closehorny with dissolve
-                "I feel a flitter of butterflies in my stomach before we part, and she gleefully takes a sip of cider to break up the post-hug awkwardness."
-                honeycrisp "Heh, didn't think you'd actually go for it."
-                honeycrisp "Thanks, I needed that."
-            "How about something more than a hug?":
-                "She takes a sip of cider before replying with a bemused expression."
-                honeycrisp "I’d love to show a guest like yourself how a cowgirl like me performs at a rodeo."
-                honeycrisp "But with mah injury, well, maybe you’ll have to do the showing off."
+                "Перед тем, как мы расстаемся, я чувствую порхание бабочек в животе, и она с удовольствием делает глоток сидра, чтобы развеять неловкость после объятий."
+                honeycrisp "Хех, не думала, что ты в самом деле пойдешь на это."
+                honeycrisp "Спасибо, я нуждалась в этом."
+            "Как насчет чего-то большего, чем объятия?"
+                "Вопрос явно ошеломил её, она пытается скрыть своё смущение, сделав глубокий глоток сидра."
+                honeycrisp "Я бы с радостью показала гостю вроде тебя как такая наездница как я выступает на родео."
+                honeycrisp "Но с моей травмой, well, maybe you’ll have to do the showing off."
                 honeycrisp "Later, though, we got some demanding work to do first."
             "I’ll pass for now; I don’t want to get distracted before going back to work.":
                 honeycrisp "Mm, good thinking stud, too much physical contact might…"
@@ -440,7 +441,7 @@ label farm:
         honeycrisp "She helps me out during the weekend, I always tell her she doesn’t need to, but she’ll just do it anyway."
         mc "Is there no one else that can help you? Another relative, or just an employee?"
         show honeycrisp closeneutral with dissolve
-        honeycrisp "Hmm..."
+        honeycrisp "Хмм..."
         honeycrisp "Maybe… I’m so busy though, and I can’t even legibly write a letter with my wrist like this."
         mc "Pardon my naivety if I’m wrong, is there no way to fix your wrist with magic?"
         show honeycrisp closehappy with dissolve
@@ -3534,35 +3535,35 @@ label farm:
 
                 "Judging by her moans, she's close too, her back is arching and her entire body trembles as her explosive orgasm boils within."
 
-                anna "F-F… F-F-Fuck! C-Coming!"
+                anna "Б-Б… Б-Б-Блядь! К-Кончаю!"
 
                 "She can barely contain herself, she’s in complete ecstasy as her entire body experiences a powerful orgasm."
 
-                anna "Ahh, k-keep going, I’m… Aahhhhh!"
+                anna "Aхх, продолжай, Я… Ааххххх!"
 
-                "Her moans are reduced to adorable squeaks as her hips buckle and her tongue lulls out lewdly."
+                "Её стоны снизошли до милых визгов в то время как её бедра извивались, а её язык непристойно свисал."
 
-                "As before, Anna squirts a little with her orgasm, splattering her lewd juices onto my cock."
+                "Как и раньше, Аннa немного сквиртанула во время своего оргазма, её непристойный сок разлился на мой член."
 
-                anna "Gosh, so good… D-don’t stop! I want more!"
+                anna "Боже, так хорошо… Н-Не останавливайся! Я хочу ещё!"
 
-                "I wasn’t planning on stopping. If anything, I’m going even quicker and harder so I can fill her pussy up with my cum."
+                "Я не планировал останвливаться. If anything, I’m going even quicker and harder so I can fill her pussy up with my cum."
 
                 "Tightly grabbing her ass as leverage, I speed up, prepping myself to cum inside."
-                anna "Ahh! C-Cum inside me, I want it all!"
+                anna "Ахх! К-Кончи в меня, Я хочу все!"
                 "Her words enthuse me as my orgasm begins to swell up, her pussy feels euphoric right now. "
-                anna "It feels so good, I-I’m going to... Again!"
-                "Her insides contract around my cock and she squirts again, but all I can concentrate on is fucking. The pleasure is indescribable, I can’t hold on much longer, I’ll cum any second."
+                anna "Это чувство так прекрасно, Я-Я собираюсь... Снова!"
+                "Ее нутро обхватила мой член и она кончает снова, но все ещё я могу концентрироваться на ебле. Невероятное удовольствие, Я не могу больше сдерживаться, Я кончу в любую секунду."
                 play sound cum
                 show honeycrispanna threesome4 with cum
                 play sound cum
                 show honeycrispanna threesome4 with cum
-                "My vision turns white, and my muscles tense up as I ejaculate thick ropes of semen deep into her womb."
+                "Мой взгляд сменился пеленой, и мои мышцы напряглись подобно троссам, я эякулировал семенем глубоко в ее утробу."
                 play sound cum
                 show honeycrispanna threesome4 with cum
                 play sound cum
                 show honeycrispanna threesome4 with cum
-                anna "Aiiieeee, you’re cumming! Ahhhh…"
+                anna "Айййааа, ты кончаешь! Ахххх…"
                 play sound cum
                 show honeycrispanna threesome4 with cum
                 play sound cum
